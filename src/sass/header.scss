@@ -1,0 +1,117 @@
+.header-activbox {
+  padding: 20px; 
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+  position: relative;
+  @media (max-width: 980px ) {padding: 30px 0; }
+  @media (max-width: 1024px) {padding:30px 0;}
+  @media (max-width: 870px)  { padding: 30px 20px;}
+  }
+.header-activbox::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: block;
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: 1;
+   }
+
+   .container { 
+    position: relative;
+    z-index: 2;
+  }
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 840px) {justify-content: center;}  
+  @media (max-width: 450px) { flex-direction: column;
+  align-items: center;}
+}
+.navigation-list {
+  display: flex;
+@media (max-width: 840px) { flex-direction: column;
+  }
+  @media (max-width: 450px) { margin-top: 15px;}
+}
+
+  
+  
+.navigation-list-item { 
+  @include nav;
+  margin-left: 50px;
+  @media (max-width: 840px) { margin-bottom: 10px;}
+  }
+
+.navigation-list-item a { color:$white;
+  @media (max-width: 870px) { font-size: $_18px;
+   }
+  @media (max-width: 450px) { font-size: $_13px; }
+}
+
+.title { margin-top: 130px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: $_64px;
+  line-height: 75px;
+  text-align: center;
+  text-transform: uppercase; 
+  color: $white; 
+  margin-bottom: 32px;
+  @media ( max-width: 870px) {font-size:$_36px; }
+  @media ( max-width:700px) { font-size: $_18px;}
+  @media ( max-width:545px) { font-size: 1rem;}
+  @media ( max-width:350px) { font-size: 0.7rem;}
+ }
+
+.text-description {
+@include h4;
+text-align: center;
+color: $white;
+@media ( max-width: 870px) {font-size: $_24px; }
+@media ( max-width:700px) { font-size: $_13px;}
+@media ( max-width:545px) { font-size: 0.7rem;}
+@media ( max-width:350px) { font-size: 0.5rem;}
+}
+
+.link-download {
+@include button;
+margin:auto;
+margin-top: 80px;
+@media ( max-width: 870px) {width:350px;}
+@media ( max-width: 650px) {width:300px;}
+@media ( max-width: 400px) {width:280px;}
+@media ( max-width: 320px) {width: 250px;}
+
+
+}
+
+.link-download a { 
+text-align: center;
+display: block;
+@include h4;
+padding: 20px 30px;
+text-transform: uppercase;
+color: $white;
+@media ( max-width: 650px) {font-size:1.5rem;}
+@media ( max-width: 400px) {font-size:1.2rem;}
+
+}
+
+
+
+
+
+
+  
+
+
+
+
+

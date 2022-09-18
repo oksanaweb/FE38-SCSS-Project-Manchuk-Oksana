@@ -1,0 +1,25 @@
+{
+  "name": "tms-progect",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 3 versions, not dead",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oksanaweb/FE38-SCSS-Project-Manchuk-Oksana.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oksanaweb/FE38-SCSS-Project-Manchuk-Oksana/issues"
+  },
+  "homepage": "https://github.com/oksanaweb/FE38-SCSS-Project-Manchuk-Oksana#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  }
+}

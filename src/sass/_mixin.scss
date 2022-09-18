@@ -1,0 +1,43 @@
+@mixin h3 { 
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: $_24px;
+  line-height: 28px;}
+
+  @mixin h4 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_24px;
+    line-height: 28px;}
+
+  @mixin p {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_18px;
+    line-height: 21px; }
+
+  @mixin button {  
+ width: 380px;
+ background-color: $coral;}
+
+  @mixin nav{ 
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: $_13px;
+    line-height: 15px;
+    text-transform: uppercase; 
+    }
+@mixin h5 { 
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: $_18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+

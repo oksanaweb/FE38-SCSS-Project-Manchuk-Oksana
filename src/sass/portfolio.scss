@@ -1,0 +1,29 @@
+.portfolio { padding: 80px;}
+
+.card-wrap { display: flex;
+justify-content: space-between;
+flex-wrap: wrap;}
+
+.portfolio-card {width: 315px; 
+margin-bottom: 90px;}
+
+.card-title { 
+  @include h4;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+ }
+
+.card-img {display: flex;
+  justify-content: center;
+  margin-bottom: 35px;}
+
+.card-img img { 
+  width: 25%;
+  height: 25%;  
+}
+.card-text { 
+  @include p;
+  color: $greydark;
+   text-align: center;
+}
