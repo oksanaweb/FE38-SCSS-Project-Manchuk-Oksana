@@ -1,1 +1,32 @@
-console.log ("Hello");
+const swiper = new Swiper('.swiper')
+
+new Swiper('.swiper', {
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  speed: 1500,
+
+  autoplay: {
+    delay: 1500,
+
+  },
+  breakpoints:{ 
+    320: {
+        slidesPerview:1,
+         },
+         480: {
+          slidesPerView:1,
+           },
+           992: {
+            slidesPerview:1,
+         }
+},
+});
+
+
+
+
+

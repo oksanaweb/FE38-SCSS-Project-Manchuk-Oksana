@@ -1,0 +1,24 @@
+.download { padding: 120px 0;}
+
+.download-title { text-align: center;}
+
+.download-text { @include text;
+margin-bottom: 15px;}
+
+.download-description 
+{ font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+margin-bottom: 50px;
+}
+
+.download-button { 
+  margin:  0 auto;
+  display: block;
+ @include button;
+ @include h4;
+ padding: 20px 30px;
+ text-transform: uppercase;
+color: $white;
+border: none;
+}

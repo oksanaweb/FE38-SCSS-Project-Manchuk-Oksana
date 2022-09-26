@@ -9,13 +9,31 @@
 @import "_mixin.scss";
 @import "header.scss";
 @import "portfolio.scss";
+@import "gallery.scss";
+@import "team.scss";
+@import "slider.scss";
+@import "download.scss";
+@import "contact.scss";
 
-html { font-family: "Raleway";}
 
-.container {
-  max-width: 1170px;
+.container {max-width: 1170px;
   margin:auto;
-  padding: 0 15px;
+  padding: 0 15px;}
+
+
+  html {font-family:  "Raleway";
+  }
+
+@media (max-width:920px) 
+{ 
+  html { font-size: 14px;}
 }
-
-
+@media (max-width:680px) { 
+  html { font-size: 13px;}
+}
+@media (max-width:580px) { 
+  html { font-size: 12px;}
+}
+@media (max-width:450px) { 
+  html {font-size:11px;}
+}

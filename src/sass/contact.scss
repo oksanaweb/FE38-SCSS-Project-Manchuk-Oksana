@@ -1,0 +1,51 @@
+.contact { padding: 120px 0;
+background-color: #353C65;
+}
+
+.contact-wrap { display: flex;
+  justify-content: space-between;
+}
+
+.contact-item {width: 400px;}
+
+.location-text { color:$white;
+  @include contact;
+  text-transform: uppercase;
+
+}
+
+.adress { 
+  margin-top: 30px;
+  font-size: $_18px;
+  color:$white;}
+
+.share { 
+  color:$white;
+  text-transform: uppercase;
+  @include contact;
+}
+.contact-list { display: flex;
+margin-top: 20px;}
+.contact-list-item { 
+  width: 39px;
+  height: 39px;
+  border: 1px solid $grey;
+  margin-right: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  } 
+  
+.about-text { color:$white;
+@include contact;
+text-transform: uppercase;
+margin-bottom: 30px;}   
+
+.author {font-weight:400;
+  font-size:$_18px;
+  line-height:21px;
+  color:$white;
+  text-transform: capitalize;
+ }
+
+
