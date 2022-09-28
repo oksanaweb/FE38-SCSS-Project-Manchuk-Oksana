@@ -1,6 +1,6 @@
 .header-activbox {
   padding: 20px; 
-  background-image: url(../img/background.png);
+  background-image: url(../img/back2.jpg);
   background-repeat: no-repeat;
   background-size:cover;
   background-position:center;
@@ -22,7 +22,7 @@
        object-position: center;
        @media (max-width: 980px ) {width: 160px;
         height: 20px;}
-       @media (max-width: 870px) {width: 150px;
+       @media (max-width: 870px) {width: 100px;
         height: 18px;}
         }
        @media (max-width: 450px) {width:140px; 
@@ -35,7 +35,7 @@
   content: '';
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   display: block;
   position: absolute;
   top: 0;
@@ -98,6 +98,8 @@
   @media ( max-width:700px) { font-size: $_18px;}
   @media ( max-width:545px) { font-size: 1rem;}
   @media ( max-width:350px) { font-size: 0.7rem;}
+  @media ( max-width:715px) { margin-top: 50px;}
+
  }
 
 .text-description {
