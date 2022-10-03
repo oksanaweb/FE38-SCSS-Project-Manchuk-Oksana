@@ -3,13 +3,18 @@
 .download-title { text-align: center;}
 
 .download-text { @include text;
-margin-bottom: 15px;}
+  margin-bottom: 15px;
+  @media (max-width:720px) {font-size:$_18px}
+}
 
 .download-description 
 { font-weight: 700;
   font-size: 18px;
   line-height: 21px;
 margin-bottom: 50px;
+@media (max-width:720px) {font-size:$_14px}
+
+
 }
 
 .download-button { 
@@ -21,4 +26,7 @@ margin-bottom: 50px;
  text-transform: uppercase;
 color: $white;
 border: none;
+@media (max-width:720px) {width: 300px;}
+@media (max-width:500px) {width: 250px;}
+
 }

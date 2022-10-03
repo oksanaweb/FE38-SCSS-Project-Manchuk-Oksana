@@ -2,7 +2,7 @@
 .team-wrap { display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
-margin:0 -15px; 
+
 @media (max-width:1119px){ justify-content: space-evenly;}
 @media (max-width:449px){ justify-content: center;}
 }
