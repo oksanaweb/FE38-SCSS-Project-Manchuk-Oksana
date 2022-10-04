@@ -4,6 +4,7 @@
 
 .download-text { @include text;
   margin-bottom: 15px;
+  line-height: 24px;
   @media (max-width:720px) {font-size:$_18px}
 }
 
@@ -28,5 +29,25 @@ color: $white;
 border: none;
 @media (max-width:720px) {width: 300px;}
 @media (max-width:500px) {width: 250px;}
+animation: download 2s infinite ease-in-out alternate;
+position: relative;
 
+}
+
+
+@keyframes download {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
 }

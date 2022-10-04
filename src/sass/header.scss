@@ -1,5 +1,5 @@
-.header-activbox {
-  padding: 20px; 
+.header-activbox { 
+  padding: 20px 0px 50px 0px;
   background-image: url(../img/back2.jpg);
   background-repeat: no-repeat;
   background-size:cover;
@@ -16,7 +16,6 @@
   width: 180px;
   height: 25px;
  overflow: hidden;
-  margin-bottom: 30px;
   &-img { width: 100%;
        height: 100%;
        object-position: center;
@@ -50,15 +49,14 @@
 .header-wrap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
  }
- 
+
 .navigation-list {
   display: flex;
 @media (max-width: 920px) { flex-direction: column;
 } 
-}
-
-  
+}  
   
 .navigation-list-item { 
   @include nav;
@@ -147,7 +145,11 @@ color: $white;
   display: none;
 }
 .fa-bars { font-size:32px;
-  color: $white;}
+  color: $white;
+  display: none;
+  @media (max-width:920px) {display: block;}
+
+}
 
   @media (max-width:920px) {  
     html {font-size: 20px;}
