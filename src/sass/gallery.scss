@@ -1,12 +1,14 @@
 .gallery { padding:40px 0;
-}
+  
+ }
 
 .gallery-wrap { 
     display: flex;
   justify-content:space-evenly;
   flex-wrap: wrap;
-  @media (max-width: 800px) { flex-wrap: wrap;}
-}
+    @media (max-width: 800px) { flex-wrap: wrap;
+  align-items: center;
+  }}
   
   
   img { width: 100%;
@@ -20,10 +22,10 @@
    max-width: 25%;
    max-height: 25%;
    border: 1px solid $white;
+   transition: 0.3s ease;
    @media (max-width: 800px) { max-width: 50%;
     max-height: 50%;}
-    &_hover{ transition: 0.5s all;}
-        }
+            }
 
   .gallery-text {  
     position: absolute;
@@ -36,15 +38,17 @@
    width: 100%;
    height: 100%;
    padding: 30% 10%;
-   }
+   transition: 0.3s ease;
+   @media (max-width:500px){ font-size: 7px;}
+    }
 
   .gallery-text:hover {
     color: #FFFFFF;
     cursor: pointer;
     background:rgba(255, 67, 67, 0.8);
-     display: block;
-   transition: 0.2s;
-      }
+     display: block;  
+     transition: 0.3s ease;
+        }
 
   .card-name { @include h4 ;
   margin-bottom: 20px;
@@ -53,9 +57,9 @@
 .card-description { @include card}
 
 .card:hover { 
-  .gallery-text{ display: block;}
-  &_hover{ transition: 0.5s all;}
- 
+  .gallery-text{ display: block;
+    transition: 0.3s ease;}
+  
 }
 
 

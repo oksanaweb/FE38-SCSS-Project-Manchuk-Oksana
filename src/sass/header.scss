@@ -13,8 +13,9 @@
    border-bottom: 1px solid $white;
   } 
  .header-logo { 
-  width: 180px;
+  width: 190px;
   height: 25px;
+  margin-bottom: 10px;
  overflow: hidden;
   &-img { width: 100%;
        height: 100%;
@@ -60,7 +61,7 @@
   
 .navigation-list-item { 
   @include nav;
-  margin-left: 50px;
+  margin-left: 50px;  
   @media (max-width: 840px) { margin-bottom: 10px;}
   }
 
@@ -72,8 +73,7 @@
   @media (max-width: 450px) { font-size: $_13px; }
 }
 .navigation-list-item a:hover
-{ font-size: 1rem;
-  border-bottom: 1px solid $white; 
+{  border-bottom: 1px solid $white; 
   transition: 0.2s;
 
   }
@@ -91,7 +91,8 @@
    @media ( max-width: 870px) {font-size:$_36px; }
   @media ( max-width:700px) { font-size: $_18px;}
   @media ( max-width:545px) { font-size: 1rem;}
-  @media ( max-width:350px) { font-size: 0.7rem;}
+  @media ( max-width:350px) { font-size: 1.5rem;
+    line-height: 30px}
   @media ( max-width:715px) { margin-top: 50px;}
  }
 
@@ -101,8 +102,10 @@ text-align: center;
 color: $white;
 @media ( max-width: 870px) {font-size: $_24px; }
 @media ( max-width:700px) { font-size: $_13px;}
-@media ( max-width:545px) { font-size: 0.7rem;}
-@media ( max-width:350px) { font-size: 0.5rem;}
+@media ( max-width:545px) { font-size: 1.125rem;
+  line-height: 26px}
+@media ( max-width:350px) {font-size: 1.125rem;
+  line-height: 24px}
 }
 
 .link-download {
@@ -111,7 +114,7 @@ margin:auto;
 margin-top: 50px;
 @media ( max-width: 870px) {width:350px;}
 @media ( max-width: 650px) {width:300px;}
-@media ( max-width: 400px) {width:280px;}
+@media ( max-width: 400px) {width:250px;}
 @media ( max-width: 320px) {width: 250px;}
 animation: button 2s infinite ease-in-out alternate;
 position: relative;
