@@ -1,0 +1,51 @@
+.download { padding: 120px 0;}
+
+.download-title { text-align: center;}
+
+.download-text { @include text;
+  margin-bottom: 15px;
+  line-height: 24px;
+  @media (max-width:720px) {font-size:$_18px}
+}
+
+.download-description 
+{ font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+margin-bottom: 50px;
+@media (max-width:720px) {font-size:$_14px}
+
+
+}
+
+.download-button { 
+  margin:  0 auto;
+  display: block;
+ @include button;
+ @include h4;
+ padding: 20px 30px;
+ text-transform: uppercase;
+color: $white;
+border: none;
+@media (max-width:720px) {width: 300px;}
+@media (max-width:500px) {width: 250px;}
+animation: download 2s infinite ease-in-out alternate;
+position: relative;
+}
+
+@keyframes download {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}

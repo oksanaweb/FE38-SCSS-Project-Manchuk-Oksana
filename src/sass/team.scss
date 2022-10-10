@@ -1,0 +1,79 @@
+.team { padding: 120px 0;}
+.team-wrap { display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+
+@media (max-width:1119px){ justify-content: space-evenly;}
+@media (max-width:449px){ justify-content: center;}
+}
+
+.team-item { width: 250px;
+margin: 0 15px;
+@media (max-width:1119px) 
+{ &:last-child {margin-top: 50px;}}
+@media (max-width:867px) {  &:nth-child(3)  {margin-top:50px;} }
+@media (max-width:589px) {  &:nth-child(2) {margin-top:50px;} }
+@media (max-width:500px) {width: 85%;}}
+
+
+.team-title { @include h6;
+ margin-bottom:7px;}
+
+.team-subtitle { @include p;
+text-transform: uppercase;
+color:$coral;
+margin-bottom: 18px;}
+
+.team-img { 
+  width: 250px;
+  height: 250px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  img { width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;}
+@media (max-width:559px) {border-radius: 50%;
+margin: 0 auto 30px;
+width: 200px;
+height:200px;}}
+
+.team-text { @include p;
+color: $greydark;
+margin-bottom: 38px;}
+
+.social-list { display: flex;}
+.media-list-item { 
+width: 39px;
+height: 39px;
+border: 1px solid $grey;
+margin-right: 5px;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+.fa-facebook-f { color:$grey;
+  transition: 0.2s;}
+.fa-twitter { color:$grey; 
+  transition: 0.2s;}
+.fa-linkedin {color:$grey;
+  transition: 0.2s; }
+
+.fa-facebook-f:hover{ 
+  color: blue;
+  transform: scale(1.2);
+  transition: 0.2s;}
+
+  .fa-twitter:hover { color:aqua;
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+.fa-linkedin:hover { 
+  color:#0072b1;
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+.media-list-item:hover{ 
+  transform:scale(1.1);
+}

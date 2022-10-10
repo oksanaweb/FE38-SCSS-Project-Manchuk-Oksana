@@ -1,0 +1,73 @@
+.contact { padding: 120px 0px;
+background-color: #353C65;
+}
+
+.contact-wrap { display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 -15px; 
+  flex-wrap: wrap;
+  @media (max-width:500px) { justify-content: center;}
+}
+
+.contact-item {width: 300px;
+box-sizing: border-box;
+margin: 0 15px;
+margin: auto;
+display: block;
+align-items: center;
+@media (max-width:1049px) {  &:nth-child(3)  {margin-top:50px;} }
+@media (max-width:699px) {  &:nth-child(2)  {margin-top:50px;} }
+@media (max-width:500px) {width: 100%;}
+@media (max-width:500px) { padding: 0 15px;}
+
+}
+
+.location-text { color:$white;
+  @include contact;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.adress { 
+  margin-top: 30px;
+  font-size: $_18px;
+  color:$white;
+}
+
+.share { 
+  color:$white;
+  text-transform: uppercase;
+  @include contact;
+ }
+.contact-list { display: flex;
+margin-top: 20px;}
+.contact-list-item { 
+  width: 39px;
+  height: 39px;
+  border: 1px solid $grey;
+  margin-right: 25px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: 0.2s;
+  } 
+  .contact-list-item:hover {  
+    transform: rotate(45deg) scale(1.2);
+    transition: 0.2s;}
+
+  
+.about-text { color:$white;
+@include contact;
+text-transform: uppercase;}   
+
+.author {font-weight:400;
+  font-size:$_18px;
+  line-height:21px;
+  color:$white;
+  text-transform: capitalize;
+  margin-top: 20px;
+
+ }
+
+
